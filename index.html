@@ -1,255 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
+<<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style>
-      .img{
-        max-width: 800px;
-        max-height: 600px;
-      }
-     
-    </style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+            spacing:{
+                30:"30px",
+                60:"60px",
+                140:"140px",
+            },
+          colors: {
+            primary:"#232340",
+            secondary:"#5468E7",
+            
+          },
+          backgroundImage:{
+            hero:"url9('/images/hero.png')",
+          },
+          colors: {
+              primary: "#5A4FF3",
+              golden: "#232340",
+              secondary: "#333461",
+              gray: "#232340",
+              dark: "#00008B",
+              blue: '#5468E7',
+              darkBlue: "#0000FF",
+            },
+        },
+      },
+    };
+  </script>
+      <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" fw-bold href="#" >Brainwave.io</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Demos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Support</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <button type="button" class="btn btn-primary">become a member</button>
-        </div>
-      </div>
-    </nav>
-
-    <main>
-      <div class="container text-center bg-transparent border-0 text-dark mt-5">
-        <div class="card-body">
-          <h1 class="card-title">Get things done by awesome remote team</h1>
-          <p class="card-text my-5">
-            We share common trends and strategies for improving your rental
-            income and making sure you stay in high demand.
-          </p>
-          <div class="">
-            <a href="#" class="btn btn-primary">Get started for free <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-            </svg></a>
-            <a href="#" class="btn btn-primary  bg-transparent text-dark border-0 fw-bold">Learn more </a>
-          </div>
-        </div>
-      </div>
-      <div class="img mt-5 justify-content-center mx-auto">
-        <img src="https://i.postimg.cc/52QP7c1R/projet.png" class="img-fluid"  alt="image">
-      </div>
-      <div class=" mt-5 pt-5 p-5 bg-light">
-        <div class="row ">
-          <div class="col-sm d-flex justify-content-center px-5 ">
-            <h2 class="fw-bold "> 1M+</h2>
-           <p class="px-3 text-muted ">Customers visit Albino every months</p> 
-          </div>
-          <div class="col-sm d-flex justify-content-center">
-            <h2 class="fw-bold">93%</h2>
-            <p class="px-3 text-muted">Satisfaction rate from our customers.</p>
-          </div>
-          <div class="col-sm d-flex justify-content-center">
-            <h2 class="fw-bold">4.9</h2>
-            <p class="px-4 text-muted">Average customer ratings out of 5.00!</p>
-          </div>
-        </div>
-      </div>
-  
-          <div class="text-center text-light mt-4 p-5 justify-content-center "style="background-color: #161C2D" >
-            <h2>Pricing & Plans</h2>
-            <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-            <div class="row text-dark g-5 ">
-                <div class="col-md">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <a href="#" class="button btn mb-3">Basic</a>
-                            <h2 class=" h1 fw-bold card-title">$29</h2>
-                            <p class="card-text">One time purchase</p>
-                            <p class="">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
+      <footer class="bg-darkBlue pt-[73px] px-[140px] pb-[37px] text-white">
+          <div class="flex gap-[130px] ">
+              <div class="space-y-4">
+                  <img src="Logo (4).png" alt="logo" >
+                  <p class="text-sm">Collaboration platform for mordern team</p>
+              </div>
+              <div class="flex gap-[71px] flex-row-reverse">
+                  <div>
+                      <h2 class="text-2xl text-blue">Stay up to date </h2>
+                  <p class="mt-4 text-sm">Subscribe to our newseller</p>
+                  <form class="mt-[10px] py-[11px] rounded px-4 bg-[#F5F5F5] bg-opacity-20 relative">
+                      <input type="search" class=" bg-transparent rounded outline-none" placeholder="Email" required>
+                      <div class="absolute right-4 top-[11px]">a</div>
+                  </form>
+                  </div>
+                  <div>
+                      <h2 class="text-2xl text-blue">contact us</h2>
+                      <ul class="space-y-3 mt-4">
+                          <li>Procucts</li>
+                          <li>Blog</li>
+                          <li>Supports</li>
+                      </ul>
+                  </div>
+                  <div>
+                    <h2 class="text-2xl text-blue">features</h2>
+                    <ul class="space-y-3 mt-4">
+                        <li>Procucts</li>
+                        <li>Blog</li>
+                        <li>Supports</li>
+                    </ul>
                 </div>
-                <div class="col-md ">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <a href="#" class="button btn mb-3">Basic</a>
-                            <h2 class=" h1 fw-bold card-title">$49</h2>
-                            <p class="card-text">One time purchase</p>
-                            <p class="">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-  <div class="col-md">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <a href="#" class="button btn mb-3">Basic</a>
-                            <h2 class=" h1 fw-bold card-title">$99</h2>
-                            <p class="card-text">One time purchase</p>
-                            <p class="">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-      </div>
-      
-    </main>
-    <footer class="text-center text-lg-start bg-body-tertiary ">
-
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div class="me-5 d-none d-lg-block">
-  
-        </div>
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-
-      </section>
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Brainwave.io
-              </h6>
-              <p>
-                With lots of unique blocks, you can easily build a page without coding. Build your next landing page.
-              </p>
-              <div class="icons">
-                <i class="bi bi-twitter"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-linkedin"></i>
-            </div>
-            </div>
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                comapany
-              </h6>
-              <p>
-                <a href="#!" class="text-reset list-group-item border-0" >About us</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset list-group-item border-0">Contact us</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset list-group-item border-0">Carreers</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset list-group-item border-0">Press</a>
-              </p>
-            </div>
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">
-              product
-              </h6>
-              <p>
-                <a href="#!" class="text-reset list-group-item border-0">Features</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset list-group-item border-0">Pricing</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset list-group-item border-0">News</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset list-group-item border-0">Help desk</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset list-group-item border-0 ">Support</a>
-              </p>
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Services</h6>
-              <p><i class="fas fa-home me-3"></i> Digital marketing</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                Content writing
-              </p>
-              <p><i class="fas fa-phone me-3"></i> SEO for business</p>
-              <p><i class="fas fa-print me-3"></i> UI design</p>
-            </div>
-            
+                <div>
+                  <h2 class="text-2xl text-blue">Company</h2>
+                  <ul class="space-y-3 mt-4">
+                      <li>Procucts</li>
+                      <li>Blog</li>
+                      <li>Supports</li>
+                  </ul>
+              </div>
+              </div>
           </div>
+      </footer>
           
-        </div>
-      </section>
-
-    </footer>
-    
-    
-    
-   
-
+      
   </body>
-</html>
+  </html>
